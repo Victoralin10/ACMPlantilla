@@ -18,12 +18,8 @@ trees/Cartezian.h	Cartesian Tree
 trees/Segment.h	Segment Tree
 
 [Math]
-math/ExtendedEuclid.h	Extended Euclid's Algorithm
-math/FastSieve.h	Fast Prime Number Sieve
-math/FFT.h	Fast Fourier Transform
-math/GaussJordan.h	Gauss-Jordan Elimination
-math/GcdLcm.h	GCD and LCM
-math/ModularLinearEquationSolver.h	Modular Linear Equation Solver
+math/ExtendedEuclid.cpp	Extended Euclid's Algorithm
+math/PollardRho.cpp	PollardRho + MillerRabin
 
 [Strings]
 string/AhoCorasick.h	Aho-Corasick Algorithm
