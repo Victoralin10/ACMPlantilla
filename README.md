@@ -1,5 +1,5 @@
 # ICPC-Notebook
-Notebook for INSA Lyon teams at ACM ICPC. Ideas and sources are mainly from Razvan Stancioiu and the Stanford University ACM team.
+Notebook for Zoids team at ACM ICPC. Based on https://github.com/INSAlgo/ICPC-Notebook 
 
 # Usage
 C++ and Python notebook files are located in the cpp/ and python/ directories, respectively.
@@ -14,4 +14,7 @@ Note that there is a tab between the filename and its description. You shouldn't
 
 The generator script can add text highlighting for the following file formats : `.h, .c, .cc, .cpp, .java, .py`
 
-Once the `contents.txt` file is ready, the notebook can be generated using `python generator.py [python|cpp]`
+Once the `contents.txt` file is ready, the notebook can be generated using 
+(warning, it will download a 3GB docker latex image, if you prefer to install latex locally and use that installation change lines 71 and 72 of generator.py)
+
+    `./generator.py [python|cpp]`
