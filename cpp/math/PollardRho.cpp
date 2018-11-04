@@ -36,7 +36,7 @@ struct Pollard_Rho
 	    }
 	    return x%c;
 	}
-	bool Miller(ull p,int iteration){ // isPrime?
+	bool Miller(ull p,int iteration){ // isPrime? O(iteration * (log(n)) ^ 3 )
 	    if(p<2){
 	        return false;
 	    }

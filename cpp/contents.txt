@@ -20,6 +20,10 @@ trees/Segment.h	Segment Tree
 [Math]
 math/ExtendedEuclid.cpp	Extended Euclid's Algorithm
 math/PollardRho.cpp	PollardRho + MillerRabin
+math/Sieve.cpp	Sieve
+math/FermatsLittleTheorem.cpp	Fermat's Little Theorem
+math/EulersTheorem.cpp	Euler's Theorem
+math/ChineseRemainder.cpp	Chinese Remainder Theorem
 
 [Strings]
 string/AhoCorasick.h	Aho-Corasick Algorithm
