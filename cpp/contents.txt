@@ -1,21 +1,5 @@
-[Geometry]
-geometry/Convexhull.h	Convex Hull Algorithm
-geometry/Delaunay.h	Delaunay Triangulation
-geometry/Geometry.h	Various Geometry Functions
-
-[Graphs]
-graph/Dijkstra.h	Dijkstra's Algorithm
-graph/Dinic.h	Max Flow (Dinic's Algorithm)
-graph/MinCostMaxFlow.h	Max Flow (Edmonds-Karp Algorithm)
-graph/EulerianPath.h	Eulerian Path
-graph/Hopcroft-Karp.h	Hopcroft-Karp Algorithm
-graph/LCA.h	Lowest Common Ancestor
-graph/StronglyConnectedComponents.h	Strongly Connected Components
-graph/Union-Find.h	Union-Find Set
-
-[Tree]
-trees/Cartezian.h	Cartesian Tree
-trees/Segment.h	Segment Tree
+[Data Structures]
+DataStructures/BIT.cpp	Binary Indexed Tree (BIT)
 
 [Math]
 math/ExtendedEuclid.cpp	Extended Euclid's Algorithm
@@ -24,11 +8,17 @@ math/Sieve.cpp	Sieve
 math/FermatsLittleTheorem.cpp	Fermat's Little Theorem
 math/EulersTheorem.cpp	Euler's Theorem
 math/ChineseRemainder.cpp	Chinese Remainder Theorem
+math/PhiSieve.cpp	Phi Sieve
+math/LinearSieve.cpp	Linear Sieve and logarithmic factorization
+math/FFT.cpp	Fast Fourier Transform
+math/ModularInverse.cpp	Modular inverse
+math/Mobius.cpp	Mobius Function
+math/PhillaiSieve.cpp	Phillai Sieve
+math/LucasTheorem.cpp	Lucas Theorem (small prime moduli and big n and k)
+math/Formulas.cpp	Catalan, dearrangements and other formulas
 
-[Strings]
-string/AhoCorasick.h	Aho-Corasick Algorithm
-string/Kmp.h	Knuth-Morris-Pratt Algorithm
-string/SuffixArray.h	Suffix Array
+[Flows]
+flows/Dinic.cpp	Dinic (Also maximum bipartite matching)
 
 [Techniques]
 ../techniques.txt	Various algorithm techniques
