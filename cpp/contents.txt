@@ -1,5 +1,5 @@
 [Data Structures]
-DataStructures/BIT.cpp	Binary Indexed Tree (BIT)
+dataStructures/BIT.cpp	Binary Indexed Tree (BIT)
 
 [Math]
 math/ExtendedEuclid.cpp	Extended Euclid's Algorithm
@@ -19,6 +19,9 @@ math/Formulas.cpp	Catalan, dearrangements and other formulas
 
 [Flows]
 flows/Dinic.cpp	Dinic (Also maximum bipartite matching)
+
+[Graphs]
+graphs/BiconnectedComponents.cpp	Biconnected Components, bridges and articulation points O(n)
 
 [Techniques]
 ../techniques.txt	Various algorithm techniques
