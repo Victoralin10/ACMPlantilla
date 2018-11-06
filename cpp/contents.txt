@@ -26,6 +26,8 @@ graphs/Dijkstra.cpp Dijkstra
 graphs/BellmanFord.cpp Bellman Ford (and applications)
 graphs/FloydWarshall.cpp Floyd Warshall
 graphs/SCC.cpp SCC (Strongly Connected Components)
+graphs/2sat.cpp 2-SAT
+graphs/UnionFind.cpp Union - Find
 
 [Techniques]
 ../techniques.txt	Various algorithm techniques
