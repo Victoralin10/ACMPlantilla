@@ -22,6 +22,10 @@ flows/Dinic.cpp	Dinic (Also maximum bipartite matching)
 
 [Graphs]
 graphs/BiconnectedComponents.cpp	Biconnected Components, bridges and articulation points O(n)
+graphs/Dijkstra.cpp Dijkstra
+graphs/BellmanFord.cpp Bellman Ford (and applications)
+graphs/FloydWarshall.cpp Floyd Warshall
+graphs/SCC.cpp SCC (Strongly Connected Components)
 
 [Techniques]
 ../techniques.txt	Various algorithm techniques
