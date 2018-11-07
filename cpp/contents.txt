@@ -1,5 +1,12 @@
 [Data Structures]
 dataStructures/BIT.cpp	Binary Indexed Tree (BIT)
+dataStructures/SegmentTree.cpp	SegmentTree
+dataStructures/SegmentTree_LazyPropagation.cpp	SegmentTree + LazyPropagation
+dataStructures/ImplicitSegmentTree.cpp	Implicit Segment Tree
+dataStructures/ImplicitSegTree_LazyPropag.cpp	ImplicitSegTree with Lazy Propagation
+dataStructures/PersistantSegTree.cpp	Persistant Segment Tree
+dataStructures/SparseTable1.cpp	SparseTable1
+dataStructures/SparseTable2.cpp	SparseTable2
 dataStructures/JoshuasSegmentTreeWithLazy.cpp	Joshua's Segment Tree with Lazy (APIsh)
 
 [Math]
