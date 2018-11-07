@@ -3,11 +3,15 @@
         "numeric": "cpp",
         "random": "cpp",
         "ratio": "cpp",
+<<<<<<< HEAD
         "*.tcc": "cpp",
         "deque": "cpp",
         "list": "cpp",
         "unordered_map": "cpp",
         "unordered_set": "cpp",
         "vector": "cpp"
+=======
+        "utility": "cpp"
+>>>>>>> bf19462975a11ce37bc171f22e0cd8422e891630
     }
 }

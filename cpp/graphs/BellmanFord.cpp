@@ -82,12 +82,12 @@ int main() {
         /*
             Solving a set of inequalities:
             Building the constraint graph:
-                Each variable Xi corresponds to a node Vi
-                Each constraint Xj - Xi <= bij corresponds to an
-                edge from Xi to Xj with weight bij
-                We add a special node V0 and we add edges from
-                this special node to all other nodes. The weights of
-                these edges are 0
+                Each variable Xi corresponds to a node Vi
+                Each constraint Xj - Xi <= bij corresponds to an
+                    edge from Xi to Xj with weight bij
+                We add a special node V0 and we add edges from
+                    this special node to all other nodes. The weights of
+                    these edges are 0
                 We run bellman ford with source V0.
 
             There are no negative cycles if and only if the set on inequalities has solution (the solution is the final distances)
