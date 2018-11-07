@@ -12,3 +12,16 @@ int mobius( int num ) {
 }
 
 /************************************/
+
+//By marioyc
+int N = 15;
+int mu[N+1];
+
+void mobius() {
+    CLR(mu, 0);
+    mu[1] = 1;
+
+    for(int i = 1;i <= N;++i)
+        for(int j = 2*i;j <= N;j += i)
+            mu[j] -= mu[i];
+}

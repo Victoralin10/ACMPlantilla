@@ -10,3 +10,11 @@ using namespace std;
 
 typedef long long Long;
 typedef long double Double;
+
+typedef vector<int> vInt;
+typedef pair<int,int> Pair;
+
+const int N = 1e5 + 2;
+const int INF = 1e9 + 7;
+const int MOD = 1e9 + 7;
+const double EPS = 1e-8;
