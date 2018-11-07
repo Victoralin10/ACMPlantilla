@@ -2,6 +2,7 @@
     "files.associations": {
         "numeric": "cpp",
         "random": "cpp",
-        "ratio": "cpp"
+        "ratio": "cpp",
+        "utility": "cpp"
     }
 }

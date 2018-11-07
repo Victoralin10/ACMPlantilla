@@ -1,5 +1,6 @@
 [Data Structures]
 dataStructures/BIT.cpp	Binary Indexed Tree (BIT)
+dataStructures/JoshuasSegmentTreeWithLazy.cpp	Joshua's Segment Tree with Lazy (APIsh)
 
 [Math]
 math/ExtendedEuclid.cpp	Extended Euclid's Algorithm
@@ -19,15 +20,30 @@ math/Formulas.cpp	Catalan, dearrangements and other formulas
 
 [Flows]
 flows/Dinic.cpp	Dinic (Also maximum bipartite matching)
+flows/MaxFlowToConstrainedCost.cpp	Maximum Flow with upper bound cost
+flows/MaxFlowMinCost.cpp	Minimun Cost Maximum Flow
 
 [Graphs]
-graphs/BiconnectedComponents.cpp	Biconnected Components, bridges and articulation points O(n)
-graphs/Dijkstra.cpp Dijkstra
-graphs/BellmanFord.cpp Bellman Ford (and applications)
-graphs/FloydWarshall.cpp Floyd Warshall
-graphs/SCC.cpp SCC (Strongly Connected Components)
-graphs/2sat.cpp 2-SAT
-graphs/UnionFind.cpp Union - Find
+graphs/BiconnectedComponents.cpp	Biconnected Components, bridges and articulation points O(E + V)
+graphs/Dijkstra.cpp	Dijkstra
+graphs/BellmanFord.cpp	Bellman Ford (and applications)
+graphs/FloydWarshall.cpp	Floyd Warshall
+graphs/SCC.cpp	SCC (Strongly Connected Components)
+graphs/2sat.cpp	2-SAT (with value assignation)
+graphs/UnionFind.cpp	Union - Find
+graphs/EulerPath.cpp	Euler Path
+graphs/TopologicalSort.cpp	Topological Sort
+graphs/AdjacencyMatrix.cpp	Adjacency Matrix
+graphs/Kruskal.cpp	Kruskal (Minimum Spanning Tree)
+
+[Games]
+games/MisereNim.cpp	Nim de la miseria
+
+[DP]
+dp/SubsetForTrick.cpp	Subsets of the subsets iteration
+
+[Strings]
+strings/AhoCorasick.cpp	AhoCorasick
 
 [Techniques]
 ../techniques.txt	Various algorithm techniques

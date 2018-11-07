@@ -18,11 +18,15 @@ struct flowGraph{
 	2. G is 2-colorable.
 	3. G has no cycles of odd length.
 
-	Recontruccion de Vertex Cover en grafo bipartito:
+	Reconstruccion de Vertex Cover en grafo bipartito:
 	DFS the residual graph and mark those nodes you visit,
 	Answer is the nodes on the left that you don't visit and
 	the nodes on the right that you visit.
 
+	Reconstrucción del Min-Cut:
+	Hacer un BFS o DFS desde s (source) sobre el grafo residual y todos los nodos 
+	visitados serán parte del corte de s, las aristas que entren a alguno de estos nodos
+	pero no hayan sido visitados por el DFS serán las que forman parte del corte.
 
 	Dilworth Theorem(Max antichain = Min path cover)
 	How to find a maxim chain
