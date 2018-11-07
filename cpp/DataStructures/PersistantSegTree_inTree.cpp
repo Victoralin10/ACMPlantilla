@@ -19,15 +19,6 @@ Node* insert(Node *node, int b, int e, int pos) {
 	return new Node(node->cant + 1, l, r);
 }
 
-Pair query(Node *node1, Node *node2, int b, int e, int k) {
-	if (b == e) return {node1->cant - node2->cant, b};
-	int me = (b + e) >> 1;
-	int cantLeft = node1->left->cant - node2->left->cant;
-	if (k <= cantLeft)
-		return query(node1->left, node2->left, b, me, k);
-	return query(node1->right, node2->right, me + 1, e, k - cantLeft);
-}
-
 int query2(Node *node1, Node *node2, int b, int e, int l, int r) {
 	if (r < b || e < l) return 0;
 	if (l <= b && e <= r) return node1->cant - node2->cant;
