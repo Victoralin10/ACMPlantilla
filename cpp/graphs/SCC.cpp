@@ -1,6 +1,6 @@
+const int N = 2 * (int)5e4 + 4; // for 2-sat must be twice as the max number of variables
 
-const int N = 1e5; // for 2-sat must be twice as the max number of variables
-
+// tested on https://codeforces.com/gym/100430/problem/A
 struct DirectedGraph {
     // inputs
     int n = 0;

@@ -4,6 +4,32 @@ struct flowGraph{
 	// O (E * sqrt(V)) => on bipartite graphs or unit flow through nodes
     // O (min(V ^ (2/3), sqrt(E)) * E) => in network with unit capacities
 	// memory = O(E + V)
+
+	/**
+	
+	On bipartite graphs:
+	//maximum independent set + maxflow = nodes
+	//maximum independent set = minimun edge cover
+	//maxflow = minimum vertex cover 
+	Grafos bipartitos:
+	Any tree is 2-colorable.
+	The following are equivalent:
+	1. G is bipartite.
+	2. G is 2-colorable.
+	3. G has no cycles of odd length.
+
+	Recontruccion de Vertex Cover en grafo bipartito:
+	DFS the residual graph and mark those nodes you visit,
+	Answer is the nodes on the left that you don't visit and
+	the nodes on the right that you visit.
+
+
+	Dilworth Theorem(Max antichain = Min path cover)
+	How to find a maxim chain
+	OJO : El grafo tiene que ser un dag.
+
+
+	*/
 	typedef Long flowtype;
     const flowtype INF = (flowtype)2e10;
 	const int bfsINF = (1<<28);
