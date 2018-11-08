@@ -32,6 +32,7 @@ struct Pto {
     bool operator !=(const Pto &p) const { return fabs(x-p.x)>EPS || fabs(y-p.y)>EPS; }
 };
 
+// Positivo si anti-horario
 Double area(vector <Pto> &pts) {
     Double ans = 0;
     int n = SZ(pts);
@@ -41,6 +42,7 @@ Double area(vector <Pto> &pts) {
     return abs(ans);
 }
 
+// a,b,c
 Double area(const Pto &a, const Pto &b, const Pto &c) {
     return (c - b)^(a - b);
 }
@@ -105,13 +107,20 @@ Pto reflect(const Segm &a, const Pto &b) {
     return py*2 - b;
 }
 
-// Poligono convexo
+// Poligono convexo, en sentido antihorario
 bool isInPoligon(vector <Pto> &pol, Pto p) {
-    int hi = SZ(pol)-1, lo=1;
-    if (((p - pol[0])^(pol[lo] - pol[0])) > EPS
-        || ((pol[hi] - pol[0])^(p - pol[0])) > EPS) return false;
-    
-    
+    int hi = SZ(pol)-1, lo=1, mid;
+    Pto pp0 = p - pol[0];
+    if ((pp0^(pol[lo] - pol[0])) > EPS
+        || ((pol[hi] - pol[0])^pp0) > EPS) return false;
+
+    while (hi - lo > 1) {
+        mid = (hi + lo)>>1;
+        if ((pp0^(pol[mid] - pol[0])) > EPS) hi = mid;
+        else lo = hi;
+    }
+
+    return ((pol[hi] - pol[lo])^(p - pol[0])) > EPS;
 }
 
 vector <Pto> chull(vector <Pto> &pts) {
