@@ -32,7 +32,7 @@ int lca(int u, int v) {
 		}
 	}
 	if (u == v) return u;
-	for(int loglen = limit; loglen >= 0; loglen --) {
+	for (int loglen = limit; loglen >= 0; loglen --) {
 		if (!st[u][loglen]) continue;
 		if (st[u][loglen] != st[v][loglen]) {
 			u = st[u][loglen];
