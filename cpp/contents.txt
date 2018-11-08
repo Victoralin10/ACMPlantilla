@@ -7,6 +7,16 @@ dataStructures/ImplicitSegTree_LazyPropag.cpp	ImplicitSegTree with Lazy Propagat
 dataStructures/PersistantSegTree.cpp	Persistant Segment Tree
 dataStructures/SparseTable1.cpp	SparseTable1
 dataStructures/SparseTable2.cpp	SparseTable2
+dataStructures/CentroidDecomposition.cpp	CentroidDecomposition
+dataStructures/HeavyLightDecomp.cpp	HeavyLightDecomp
+dataStructures/HeavyLightDecomp_Lazy.cpp	HeavyLightDecomp Lazy
+dataStructures/ImplicidTreap.cpp	ImplicidTreap
+dataStructures/LCA.cpp	LCA
+dataStructures/LinkCutTree_connectivity.cpp	LinkCutTree connectivity
+dataStructures/LinkCutTree_dynalca.cpp	LinkCutTree dynalca
+dataStructures/MOAlgorithm.cpp	MO Algorithm
+dataStructures/PersistantSegTree_inTree.cpp	PersistantSegTree inTree
+dataStructures/Treap.cpp	Treap
 dataStructures/JoshuasSegmentTreeWithLazy.cpp	Joshua's Segment Tree with Lazy (APIsh)
 
 [Math]
@@ -52,6 +62,14 @@ dp/SubsetForTrick.cpp	Subsets of the subsets iteration
 
 [Strings]
 strings/AhoCorasick.cpp	AhoCorasick
+strings/SuffixAutomata.cpp	SuffixAutomata
+
+[Geometry]
+geometria/geo-enteros.cpp	geo-enteros
+geometria/geo-reales.cpp	geo-reales
+geometria/closest-pairs.cpp	closest-pairs
+geometria/ConvexHullTrick.cpp	ConvexHullTrick
+
 
 [Techniques]
 ../techniques.txt	Various algorithm techniques

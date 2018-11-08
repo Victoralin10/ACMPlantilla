@@ -68,7 +68,7 @@ if __name__ == "__main__":
     tex = get_tex(sections)
     with open('contents_'+basepath+'.tex', 'wb') as f:
         f.write(tex)
-    # latexmk_options = ["latexmk", "-pdf", "notebook_"+basepath+".tex"]
-    latexmk_options = ["./latexdockercmd.sh", "latexmk", "-cd", "-interaction=errorstopmode", "-pdf", "notebook_"+basepath+".tex"] # to show error messages
-    # latexmk_options = ["./latexdockercmd.sh", "latexmk", "-cd", "-f", "-interaction=batchmode", "-pdf", "notebook_"+basepath+".tex"]
+    # latexmk_options = ["latexmk", "-pdf", "notebook_"+basepath+".tex"] # using local latex installation
+    # latexmk_options = ["./latexdockercmd.sh", "latexmk", "-cd", "-f", "-interaction=errorstopmode", "-pdf", "notebook_"+basepath+".tex"] # to show error messages
+    latexmk_options = ["./latexdockercmd.sh", "latexmk", "-cd", "-f", "-interaction=batchmode", "-pdf", "notebook_"+basepath+".tex"]
     subprocess.call(latexmk_options)
