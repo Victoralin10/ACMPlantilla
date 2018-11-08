@@ -29,6 +29,7 @@ math/Formulas.cpp	Catalan, dearrangements and other formulas
 flows/Dinic.cpp	Dinic (Also maximum bipartite matching)
 flows/MaxFlowToConstrainedCost.cpp	Maximum Flow with upper bound cost
 flows/MaxFlowMinCost.cpp	Minimun Cost Maximum Flow
+flows/Hungarian.cpp	Hungarian Algorithm
 
 [Graphs]
 graphs/BiconnectedComponents.cpp	Biconnected Components, bridges and articulation points O(E + V)
