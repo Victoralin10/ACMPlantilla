@@ -1,23 +1,24 @@
 [Data Structures]
-dataStructures/BIT.cpp	Binary Indexed Tree (BIT)
-dataStructures/SegmentTree.cpp	SegmentTree
-dataStructures/SegmentTree_LazyPropagation.cpp	SegmentTree + LazyPropagation
-dataStructures/ImplicitSegmentTree.cpp	Implicit Segment Tree
-dataStructures/ImplicitSegTree_LazyPropag.cpp	ImplicitSegTree with Lazy Propagation
-dataStructures/PersistantSegTree.cpp	Persistant Segment Tree
-dataStructures/SparseTable1.cpp	SparseTable1
-dataStructures/SparseTable2.cpp	SparseTable2
-dataStructures/CentroidDecomposition.cpp	CentroidDecomposition
-dataStructures/HeavyLightDecomp.cpp	HeavyLightDecomp
-dataStructures/HeavyLightDecomp_Lazy.cpp	HeavyLightDecomp Lazy
+dataStructures/BIT.cpp  Binary Indexed Tree (BIT) O(n*log(n))
+dataStructures/CentroidDecomposition.cpp    CentroidDecomposition O(n*log(n))
+dataStructures/HeavyLightDecomposition_Lazy.cpp     Heavy Light Decomposition + Lazy O(n*log(n^2))
+dataStructures/HeavyLightDecomposition_onEdges.cpp      HeavyLightDecomp on Edges O(n*log(n)^2)
+dataStructures/HeavyLightDecomposition.cpp      Heavy Light Decompostion O(n*log(n)^2)
 dataStructures/ImplicidTreap.cpp	ImplicidTreap
-dataStructures/LCA.cpp	LCA
-dataStructures/LinkCutTree_connectivity.cpp	LinkCutTree connectivity
-dataStructures/LinkCutTree_dynalca.cpp	LinkCutTree dynalca
-dataStructures/MOAlgorithm.cpp	MO Algorithm
-dataStructures/PersistantSegTree_inTree.cpp	PersistantSegTree inTree
-dataStructures/Treap.cpp	Treap
+dataStructures/ImplicitSegmentTree.cpp	Implicit Segment Tree O(n*log(n))
+dataStructures/ImplicitSegTree_LazyPropag.cpp	ImplicitSegTree with Lazy Propagation O(n*log(n))
 dataStructures/JoshuasSegmentTreeWithLazy.cpp	Joshua's Segment Tree with Lazy (APIsh)
+dataStructures/LCA.cpp	LCA preprocess:O(n*log(n)), query: O(log(n))
+dataStructures/LinkCutTree_connectivity.cpp	LinkCutTree connectivity O(log n) amortized for all other operations
+dataStructures/LinkCutTree_dynalca.cpp	LinkCutTree dynalca O(log n) amortized for all other operations
+dataStructures/MOAlgorithm.cpp	MO Algorithm O(n*sqrt(n)*k) k: complexity of operation add or quit
+dataStructures/PersistantSegTree_inTree.cpp	PersistantSegTree inTree O(n*log(n))
+dataStructures/PersistantSegTree.cpp	Persistant Segment Tree O(n*log(n))
+dataStructures/SegmentTree_LazyPropagation.cpp	SegmentTree + LazyPropagation O(n*log(n))
+dataStructures/SegmentTree.cpp	SegmentTree O(n*log(n))
+dataStructures/SparseTable1.cpp	SparseTable1 preprocess:O(n*log(n)), query: O(k) k ~ 2
+dataStructures/SparseTable2.cpp	SparseTable2 preprocess:O(n*log(n)), query: O(log(n))
+dataStructures/Treap.cpp	Treap
 
 [Math]
 math/ExtendedEuclid.cpp	Extended Euclid's Algorithm
@@ -43,14 +44,22 @@ flows/Hungarian.cpp	Hungarian Algorithm
 
 [Graphs]
 graphs/BiconnectedComponents.cpp	Biconnected Components, bridges and articulation points O(E + V)
-graphs/Dijkstra.cpp	Dijkstra
-graphs/BellmanFord.cpp	Bellman Ford (and applications)
+graphs/BiconnectedComponents_bryan.cpp      Bryan Biconnected Components O(E + V)
+graphs/Articulation_bryan.cpp   Bryan Articulation O(E + V)
+graphs/BridgeTree.cpp    Bryan Bridge Tree O(E + V)
+graphs/Dijkstra.cpp     Dijkstra O((n + m)*log(n))
+graphs/Johnson.cpp      Johnson O(n*m*log(n))
+graphs/BellmanFord.cpp  Bellman Ford (and applications) O(n*m)
+graphs/SPFA.cpp     Shortest Path Fast Algorithm O(k*m) k ~ 2
+graphs/SPFA_findCicle.cpp   Shortest Path Fast Algorithm find Cicle O(k*m) k ~ 2
 graphs/FloydWarshall.cpp	Floyd Warshall
 graphs/SCC.cpp	SCC (Strongly Connected Components)
+graphs/Tarjan_bryan.cpp     Bryan Tarjan O(E + V)
 graphs/2sat.cpp	2-SAT (with value assignation)
 graphs/UnionFind.cpp	Union - Find
 graphs/EulerPath.cpp	Euler Path
 graphs/TopologicalSort.cpp	Topological Sort
+graphs/TopologicalSort_bryan.cpp    Bryan Topological Sort O(N)
 graphs/AdjacencyMatrix.cpp	Adjacency Matrix
 graphs/Kruskal.cpp	Kruskal (Minimum Spanning Tree)
 
@@ -59,17 +68,38 @@ games/MisereNim.cpp	Nim de la miseria
 
 [DP]
 dp/SubsetForTrick.cpp	Subsets of the subsets iteration
+dp/LCS.cpp  Longest Common Subsecuence O(n * m) / SuffixArray O((n + m)*log(n + m))
+dp/LIS.cpp  Longest Increasing Subsecuence O(n*log(n))
+dp/Iterative.cpp    DP Iterative
+dp/savingMemoty.cpp     Saving Memory
+dp/SubsetSum.cpp    Subset Sum _ Meet in the Meedle
 
 [Strings]
 strings/AhoCorasick.cpp	AhoCorasick
 strings/SuffixAutomata.cpp	SuffixAutomata
+strings/KMP.cpp     Knuth Morris Pratt(KMP) O(n + m)
+strings/Zeta.coo    ZETA Algorithm O(n + m)
+strings/Trie.cpp    Trie O(N) N: Cantidad de caracteres en el diccionario
+strings/ImplicitTrie.cpp    Implicit Trie
+strings/PersistantTrie.cpp    Persistant Trie
+strings/SuffixArray.cpp     Suffix Array + LCP + RMQ
+
+[Search]
+search/TernaryS.cpp
 
 [Geometry]
 geometria/geo-enteros.cpp	geo-enteros
 geometria/geo-reales.cpp	geo-reales
 geometria/closest-pairs.cpp	closest-pairs
-geometria/ConvexHullTrick.cpp	ConvexHullTrick
+geometria/ConvexHullTrick.cpp	Convex Hull Trick
 
+[Others]
+others/CoordinateCompression.cpp    Coordinate Compression
+others/meetInTheMiddle.cpp  Meet in the Middle
+others/RomanNumerals.cpp    Roman Numerals
+others/OrderedSet.cpp   Ordered Set
+others/Scanf.cpp    Scanf
+others/Random.cpp   Random
 
 [Techniques]
 ../techniques.txt	Various algorithm techniques

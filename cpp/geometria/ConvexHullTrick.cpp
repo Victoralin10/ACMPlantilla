@@ -1,4 +1,3 @@
-/************************************/
 const long long isQuery = -(1LL<<62);
 
 struct Line {
@@ -49,5 +48,3 @@ struct HullDynamic: public multiset<Line> {
 		return L.m*x + L.b;
 	}
 };
-
-/************************************/
