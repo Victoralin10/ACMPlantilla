@@ -4,8 +4,31 @@
 import os
 import subprocess
 import sys
+import re
 
 title = "Zoids ACM-ICPC Team Notebook"
+
+def tex_escape(text):
+    """
+        :param text: a plain text message
+        :return: the message escaped to appear correctly in LaTeX
+    """
+    conv = {
+        '&': r'\&',
+        '%': r'\%',
+        '$': r'\$',
+        '#': r'\#',
+        '_': r'\_',
+        '{': r'\{',
+        '}': r'\}',
+        '~': r'\textasciitilde{}',
+        '^': r'\^{}',
+        '\\': r'\textbackslash{}',
+        '<': r'\textless{}',
+        '>': r'\textgreater{}',
+    }
+    regex = re.compile('|'.join(re.escape(unicode(key)) for key in sorted(conv.keys(), key = lambda item: - len(item))))
+    return regex.sub(lambda match: conv[match.group()], text)
 
 def get_sections(path):
     sections = []
@@ -21,11 +44,11 @@ def get_sections(path):
                 if section_name is not None:
                     sections.append((section_name, subsections))
             else:
-                tmp = line.split('\t', 1)
+                tmp = line.split(None, 1)
                 if len(tmp) == 1:
                     raise ValueError('Subsection parse error: %s' % line)
                 filename = path + '/' + tmp[0] # Should use os.path.join but it breaks LaTeX with backslashes
-                subsection_name = tmp[1]
+                subsection_name = tex_escape(tmp[1])
                 if subsection_name is None:
                     raise ValueError('Subsection given without section')
                 subsections.append((filename, subsection_name))
@@ -60,8 +83,9 @@ def get_tex(sections):
     return tex
 
 if __name__ == "__main__":
-    if len(sys.argv) == 0:
+    if len(sys.argv) < 2:
         print('Usage : %s [python|cpp]' % sys.argv[0])
+        sys.exit(0)
     basepath = sys.argv[1]
     assert basepath in ('python','cpp')
     sections = get_sections(basepath)
@@ -69,6 +93,6 @@ if __name__ == "__main__":
     with open('contents_'+basepath+'.tex', 'wb') as f:
         f.write(tex)
     # latexmk_options = ["latexmk", "-pdf", "notebook_"+basepath+".tex"] # using local latex installation
-    # latexmk_options = ["./latexdockercmd.sh", "latexmk", "-cd", "-f", "-interaction=errorstopmode", "-pdf", "notebook_"+basepath+".tex"] # to show error messages
-    latexmk_options = ["./latexdockercmd.sh", "latexmk", "-cd", "-f", "-interaction=batchmode", "-pdf", "notebook_"+basepath+".tex"]
+    latexmk_options = ["./latexdockercmd.sh", "latexmk", "-cd", "-f", "-interaction=errorstopmode", "-pdf", "notebook_"+basepath+".tex"] # to show error messages
+    # latexmk_options = ["./latexdockercmd.sh", "latexmk", "-cd", "-f", "-interaction=batchmode", "-pdf", "notebook_"+basepath+".tex"]
     subprocess.call(latexmk_options)

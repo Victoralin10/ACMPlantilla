@@ -71,21 +71,21 @@ dp/SubsetForTrick.cpp	Subsets of the subsets iteration
 dp/LCS.cpp  Longest Common Subsecuence O(n * m) / SuffixArray O((n + m)*log(n + m))
 dp/LIS.cpp  Longest Increasing Subsecuence O(n*log(n))
 dp/Iterative.cpp    DP Iterative
-dp/savingMemoty.cpp     Saving Memory
+dp/savingMemory.cpp     Saving Memory
 dp/SubsetSum.cpp    Subset Sum _ Meet in the Meedle
 
 [Strings]
 strings/AhoCorasick.cpp	AhoCorasick
 strings/SuffixAutomata.cpp	SuffixAutomata
 strings/KMP.cpp     Knuth Morris Pratt(KMP) O(n + m)
-strings/Zeta.coo    ZETA Algorithm O(n + m)
+strings/Zeta.cpp    ZETA Algorithm O(n + m)
 strings/Trie.cpp    Trie O(N) N: Cantidad de caracteres en el diccionario
 strings/ImplicitTrie.cpp    Implicit Trie
 strings/PersistantTrie.cpp    Persistant Trie
 strings/SuffixArray.cpp     Suffix Array + LCP + RMQ
 
 [Search]
-search/TernaryS.cpp
+search/TernaryS.cpp	Ternary Search
 
 [Geometry]
 geometria/geo-enteros.cpp	geo-enteros
